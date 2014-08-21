@@ -54,4 +54,4 @@ supervisor.slots.ports:
     - 6702
     - 6703
 
-storm.local.dir: "/tmp/storm-local"
+storm.local.dir: "/scratch_ssd/gao4/storm-local"
