@@ -47,6 +47,7 @@ nimbus.host: "m1"
 #     argument:
 #       - endpoint: "metrics-collector.mycompany.org"
 #
+ui.port: 20102
 
 supervisor.slots.ports:
     - 6700
