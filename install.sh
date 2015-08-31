@@ -1,3 +1,4 @@
+#!/bin/sh
 wget http://download.nextag.com/apache/incubator/storm/apache-storm-0.9.2-incubating/apache-storm-0.9.2-incubating.tar.gz
 tar -xvf apache-storm-0.9.2-incubating.tar.gz
 ln -s apache-storm-0.9.2-incubating storm

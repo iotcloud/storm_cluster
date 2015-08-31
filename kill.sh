@@ -1,3 +1,4 @@
+#!/bin/sh
 
 declare -a arr=("m2" "m3" "m4")
 for i in "${arr[@]}"

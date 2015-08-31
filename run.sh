@@ -1,3 +1,4 @@
+#!/bin/sh
 
 ssh m1 'cd ~/storm_cluster/zookeeper;./bin/zkServer.sh start'
 ssh m1 'cd ~/storm_cluster/storm; nohup ./bin/storm nimbus > nimbus.out 2> nimbus.err < /dev/null &'
