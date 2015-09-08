@@ -85,3 +85,5 @@
 #             [ "localhost"],
 #         zkPort: 2181,
 #       }
+
+ storm.local.dir: "/scratch/jstorm"
