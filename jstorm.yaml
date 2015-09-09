@@ -56,7 +56,7 @@
 ### Netty will send multiple messages in one batch  
 ### Setting true will improve throughput, but more latency
  storm.messaging.netty.transfer.async.batch: false
- storm.messaging.netty.sync.mode: true
+ storm.messaging.netty.sync.mode: false
 
 ### if this setting  is true, it will use disruptor as internal queue, which size is limited
 ### otherwise, it will use LinkedBlockingDeque as internal queue , which size is unlimited
