@@ -1,6 +1,6 @@
 #!/bin/sh
 
-declare -a arr=("cn04" "cn05" "cn06" "cn07")
+declare -a arr=("cn06" "cn07" "cn05" "c08" "c09" "c10" "c11" "c12")
 for i in "${arr[@]}"
 do
    val=`ssh $i jps | grep -ie supervisor | sed 's/\([0-9]\) .*/\1/'`
