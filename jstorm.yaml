@@ -64,6 +64,7 @@
 ### but when there is a data loop flow, for example A -> B -> C -> A
 ### and the data flow occur blocking, please set this as false
  topology.buffer.size.limited: true
+ storm.messaging.netty.flush.check.interval.ms: 1
  
 ### default worker memory size, unit is byte
  worker.memory.size: 2147483648
