@@ -33,10 +33,10 @@
     - 6801
     - 6802
     - 6803
-    - 6804
-    - 6805
-    - 6806
-    - 6807
+#    - 6804
+#    - 6805
+#    - 6806
+#    - 6807
 
 # Default disable user-define classloader
 # If there are jar conflict between jstorm and application, 
