@@ -46,13 +46,13 @@
 
 	<logger name="com.alibaba.jstorm"
 		additivity="false">
-		<level value="INFO" />
+		<level value="ERROR" />
 		<appender-ref ref="A1" />
 	</logger>
 
 	<logger name="com.alibaba.jstorm.common.metric"
 		additivity="false">
-		<level value="INFO" />
+		<level value="ERROR" />
 		<appender-ref ref="METRICS" />
 	</logger>
 	
