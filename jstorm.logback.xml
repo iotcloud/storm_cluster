@@ -3,7 +3,7 @@
 <configuration scan="true" scanPeriod="60 seconds">
 	<appender name="A1"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>/scratch/logs/${logfile.name}</file>
+		<file>${jstorm.home}/logs/${logfile.name}</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
 			<fileNamePattern>/scratch/logs/back/${logfile.name}.%i</fileNamePattern>
 			<minIndex>1</minIndex>
@@ -23,7 +23,7 @@
 
 	<appender name="METRICS"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>/scratch/logs/${logfile.name}.metrics</file>
+		<file>${jstorm.home}/logs/${logfile.name}.metrics</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
 			<fileNamePattern>/scratch/logs/back/${logfile.name}.metrics.%i</fileNamePattern>
 			<minIndex>1</minIndex>
