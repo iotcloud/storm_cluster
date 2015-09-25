@@ -1,6 +1,6 @@
 ########### These MUST be filled in for a storm configuration
  storm.zookeeper.servers:
-     - "cn01"
+     - "cn04"
 
  storm.zookeeper.root: "/jstorm"
  
