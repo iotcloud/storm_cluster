@@ -10,6 +10,6 @@ done
 #val=`ssh m1 jps | grep -ie core | sed 's/\([0-9]\) .*/\1/'`
 #ssh m1 kill $val
 val=`ssh cn01 jps | grep -ie NimbusServer | sed 's/\([0-9]\) .*/\1/'`
-ssh cn01 kill $val
-ssh cn01 'cd ~/jstorm_cluster/zookeeper;./bin/zkServer.sh stop'
+ssh cn04 kill $val
+ssh cn04 'cd ~/jstorm_cluster/zookeeper;./bin/zkServer.sh stop'
 
