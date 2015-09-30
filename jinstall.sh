@@ -1,6 +1,6 @@
 #!/bin/sh
 
-declare -a arr=("cn06" "cn07" "cn05" "cn08")
+declare -a arr=("cn06" "cn07" "cn05" "cn08" "cn09" "cn10" "cn11" "cn12")
 for i in "${arr[@]}"
 do
    ssh $i rm -rf /scratch/jstorm
