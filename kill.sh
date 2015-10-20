@@ -8,6 +8,12 @@ do
    ssh $i kill $val
 done
 
+for i in "${arr[@]}"
+do
+   val=`ssh $i jps | grep -ie Worker | sed 's/\([0-9]\) .*/\1/'`
+   ssh $i kill $val
+done
+
 #val=`ssh m1 jps | grep -ie core | sed 's/\([0-9]\) .*/\1/'`
 #ssh m1 kill $val
 val=`ssh cn04 jps | grep -ie NimbusServer | sed 's/\([0-9]\) .*/\1/'`
