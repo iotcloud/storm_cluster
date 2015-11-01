@@ -12,7 +12,8 @@ for i in "${arr[@]}"
 do
    val=`ssh $i jps | grep -ie Worker | sed 's/\([0-9]\) .*/\1/'`
    ssh $i kill $val
-   ssh $i rm -rf /scratch/jstorm 
+   ssh $i rm -rf /scratch/jstorm
+   ssh $i rm -rf /scratch/jstorm_mapped
 done
 
 #val=`ssh m1 jps | grep -ie core | sed 's/\([0-9]\) .*/\1/'`
