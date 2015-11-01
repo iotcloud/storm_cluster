@@ -87,3 +87,6 @@
 #       }
 
  storm.local.dir: "/scratch/jstorm"
+
+ # Intranode communications
+ storm.messaging.intranode.base_file: "/scratch/jstorm_mapped"
